@@ -1,4 +1,4 @@
-# Order Management System (OMS)
+# 🛒Order Management System (OMS)📦
 
 **An end-to-end Order Management System data platform integrating DBT, Snowflake, Power BI, and GitHub for scalable analytics, ELT automation, and dynamic business intelligence reporting.**
 
