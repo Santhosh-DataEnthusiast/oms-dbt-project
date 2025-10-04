@@ -1,48 +1,71 @@
-Order Management System (OMS)
-An end-to-end Order Management System (OMS) data platform project integrating DBT, Snowflake, Power BI, and GitHub for scalable analytics, ELT automation, and dynamic business intelligence reporting.
+# Order Management System (OMS)
+
+**An end-to-end Order Management System data platform integrating DBT, Snowflake, Power BI, and GitHub for scalable analytics, ELT automation, and dynamic business intelligence reporting.**
+
 ![Dashboard](/images/Power%20BI%20_%20OMS_Dashboard.png)
 
-Project Overview
-This project demonstrates how to build a modern data pipeline for managing, analyzing, and visualizing order-related business operations. The platform enables seamless data ingestion, transformation, and advanced reporting through automated workflows and cloud tools.
+## 🚀Project Overview
 
-Key Technologies Used
-Snowflake: Data warehousing for storing raw and processed order data.
+**This project demonstrates how to build a modern data pipeline for managing, analyzing, and reporting on order data. Leveraging DBT (Data Build Tool), Snowflake, and Power BI, the system automates Extract, Load, Transform (ELT) processes and provides interactive dashboards for business intelligence.**
 
-DBT (Data Build Tool): Data modeling, transformation, and workflow orchestration.
+## 🛠️Key Technologies Used
 
-Power BI: Business intelligence dashboarding and visualization.
+* **DBT**: For data transformation and modeling
 
-GitHub: Source control, CI/CD, and project versioning.
+* **Snowflake**: Cloud data warehouse for scalable storage and querying
+
+* **Power BI**: Business intelligence tool for data visualization
+
+* **GitHub**: Version control and collaboration platform
 
 ![DBT](/images/DBT.png)
 
-Architecture
-Raw Data Layer: Source data (orders, customers, items, etc.) loaded into Snowflake (L1_LANDING schema).
+## Architecture
+🏗️ Architecture
 
-DBT Models: Transformations and staging in DBT (L2_PROCESSING, L3_CONSUMPTION schemas).
+* The OMS project follows a layered approach:
 
-Snapshots: Historical tracking for slowly changing dimensions (SCD) using DBT snapshots.
+* Raw Data Layer: Source data (orders, customers, items) is loaded into Snowflake (L1_LANDING schema).
 
-BI Layer: Power BI connected to Snowflake for reporting and dashboard creation.
+* DBT Models: Transformations and staging are implemented using DBT in L2_PROCESSING and L3_CONSUMPTION schemas.
+
+* Snapshots: Track historical changes for slowly changing dimensions (SCD) with DBT snapshots.
+
+* BI Layer: Power BI connects directly to Snowflake for building dashboards and reporting.
 
 ![Snowflake](/images/Snowflake.png)
 
-Workflow
-Ingest Data: Load raw files or source data into Snowflake tables.
+## Workflow
+1. Data Ingestion
 
-Transform with DBT:
+* Load raw files or source data into Snowflake tables.
 
-Define sources and models in DBT, transforming raw data into analytics-ready tables.
+2. Transform with DBT
 
-Use staging (_stg) and fact/dimension modeling (e.g., orders_fact, customerrevenue).
+* Define sources and models in DBT.
 
-Create snapshots for tracking changes in slowly changing dimensions.
+* Use staging models (_stg) and fact/dimension tables (e.g., orders_fact, customerrevenue).
 
-Version Control:
+* Create snapshots for historical tracking of key metrics.
 
-All DBT project code/scripts are managed in GitHub for collaboration and reproducibility.
+3. Version Control
 
-Visualization:
+* All DBT project code/scripts are managed in GitHub, enabling collaboration and reproducibility.
 
-Connect Power BI directly to Snowflake for building real-time interactive dashboards.
+4. Visualization
+
+* Power BI connects directly to Snowflake to build real-time interactive dashboards.
+
 ![Main_Dashboard](/images/Main.png)
+
+## 📈Features
+
+* Automated ELT pipelines for OMS data.
+
+* Analytics-ready tables for reporting.
+
+* Data quality enforcement via DBT tests.
+
+* Scalable and modular design for future enhancements.
+
+* Integration with BI tools for interactive insights.*
