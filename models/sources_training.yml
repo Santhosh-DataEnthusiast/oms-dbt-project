@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: training
+    database: OMS_DBT_PROJECT
+    schema: TRAINING
+    tables:
+      - name: sales_us
+      - name: sales_uk
+      - name: sales_india

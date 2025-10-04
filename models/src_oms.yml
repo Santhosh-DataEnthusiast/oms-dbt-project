@@ -1,0 +1,28 @@
+sources:
+  - name: landing
+    description: This is the primary source system for OMS of Data Analytics
+    database: oms_dbt_project
+    schema: L1_LANDING
+    tables:
+      - name: cust
+        description: The Customer Table from OMS
+        identifier: customers
+
+      - name: ordr
+        description: The Orders Table from OMS
+        identifier: orders
+
+      - name: ordritms
+        description: The Order Items Table from OMS
+        identifier: orderitems
+
+      - name: employees
+        description: The Employees Table from OMS
+        identifier: employees
+        columns:
+          - name: address
+            description: The address field from Employees Table
+            tests:
+              - not_null
+              - string_not_empty
+      
