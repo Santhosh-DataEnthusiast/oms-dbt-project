@@ -1,6 +1,6 @@
 Order Management System (OMS)
 An end-to-end Order Management System (OMS) data platform project integrating DBT, Snowflake, Power BI, and GitHub for scalable analytics, ELT automation, and dynamic business intelligence reporting.
-![alt text](<Power BI _ OMS_Dashboard.png>)
+![Dashboard](/images/Power%20BI%20_%20OMS_Dashboard.png)
 
 Project Overview
 This project demonstrates how to build a modern data pipeline for managing, analyzing, and visualizing order-related business operations. The platform enables seamless data ingestion, transformation, and advanced reporting through automated workflows and cloud tools.
@@ -14,7 +14,7 @@ Power BI: Business intelligence dashboarding and visualization.
 
 GitHub: Source control, CI/CD, and project versioning.
 
-![alt text](DBT.png)
+![DBT](/images/DBT.png)
 
 Architecture
 Raw Data Layer: Source data (orders, customers, items, etc.) loaded into Snowflake (L1_LANDING schema).
@@ -25,7 +25,7 @@ Snapshots: Historical tracking for slowly changing dimensions (SCD) using DBT sn
 
 BI Layer: Power BI connected to Snowflake for reporting and dashboard creation.
 
-![alt text](Snowflake.png)
+![Snowflake](/images/Snowflake.png)
 
 Workflow
 Ingest Data: Load raw files or source data into Snowflake tables.
@@ -45,4 +45,4 @@ All DBT project code/scripts are managed in GitHub for collaboration and reprodu
 Visualization:
 
 Connect Power BI directly to Snowflake for building real-time interactive dashboards.
-![alt text](<Screenshot 2025-10-02 232905.png>)
+![Main_Dashboard](/images/Main.png)
